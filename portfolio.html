@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua Jateno</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <button onclick="location.href='#welcome-section'" class="button type1">
+                <span class="btn-txt">Home</span>
+              </button>
+              <button onclick="location.href='#About'" class="button type1">
+                <span class="btn-txt">About</span>
+              </button>
+              <button onclick="location.href='#Projects'" class="button type1">
+                <span class="btn-txt">Projects</span>
+              </button>
+              <button onclick="location.href='#Contact'" class="button type1">
+                <span class="btn-txt">Contact</span>
+            </button>
+        </nav>
+
+        <section id="welcome-section">
+            <img src="Pic.jpg">
+            <div id="welcome-text">
+                <h1>Joshua Jateno</h1>
+                <h2>Computer Science Major @ Vassar College <br> | ColorStack | Student @ CodePath</h2>
+            </div>
+        </section>
+        <section id="About">
+            <div class="about-tile">
+                <h2>
+                    About Me
+                </h2>
+                <div id="introduction">
+                    <div class="about" id="my-description">
+                    <p>
+                        Hi! My name is Joshua and I am a passionate software developer with over 3 years of coding experience. I am pursuing a bachelors degree at Vassar College in Computer Science.
+                        I am interested in both front and back-end software development as I am particularly interested in full-stack engineering. I enjoy working on projects as a team and constantly exploring ways I can challenge myself to build new software. 
+                        Feel free to chat with me through any of my contacts.
+                    </p>
+                    </div>
+                    <div id="programming-languages-tools-and-frameworks">
+                        <div class ="about" id="programming-languages">
+                            <h3>Programming languages</h3>
+                            <div class="language-description">
+                                <div id="java">
+                                    <img src="java.png" class="icon">
+                                    <p>Java</p>
+                                </div>
+                                <div id="python">
+                                    <img src="python.png" class="icon">
+                                    <p>Python</p>
+                                </div>
+                                <div id="html">
+                                    <img src="html-5.png" class="icon">
+                                    <p>HTML</p>
+                                </div>
+                                <div id="css">
+                                    <img src="css-3.png" class="icon">
+                                    <p>CSS</p>
+                                </div>
+                                <div id="java-script">
+                                    <img src="java-script.png" class="icon">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div id="c">
+                                    <img src="c.png" class="icon">
+                                    <p>C</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="about" id="tools-and-frameworks">
+                                <h3>Tools/Frameworks</h3>
+                                    <div class="tools-and-frameworks-description">
+                                        <div id="git">
+                                            <img src="git.png" class="icon">
+                                            <p>Git</p>
+                                        </div>
+                                        <div id="android-studio">
+                                            <img src="androidstudio.png" class="icon">
+                                            <p>Android Studio</p>
+                                        </div>
+                                        <div id="figma">
+                                            <img src="figma.png" class="icon">
+                                            <p>Figma</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+            <div class="project-tile">
+                <div id="projects-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="my_projects">
+                    <div class="project" id="lunchbox">
+                        <div class="lunchbox-title">
+                            <h2>Lunch Box</h2>
+                            <img src="restaurant.png" id="restaurant-icon">
+                        </div>
+                        <p id="lunchbox-description">This Android application allows users to search for restaurants, rate them, and give reviews. It provides a great experience for exploring, evaluating, and sharing opinions about difference in dining establishments. Features include reviewing, rating and searching for restaurants to find restaurants based on name, location, or rating.
+
+                            Rate and Review: Share your dining experiences by rating and leaving reviews for restaurants.</p>
+                        <div id="project-1-visit">
+                        <a target="_blank" href="https://github.com/tanwasp/LunchBox-Android">
+                            <button class="cta">
+                                <span>Visit</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>                          
+                        </a>
+                        </div>
+                    </div>
+                    <div class="project" id="registration">
+                        <div class="registration-title">
+                        <h2>Registration</h2>
+                        <img src="laptop.png" id="registration-icon">
+                        </div>
+                        <p id="registration-description">Developed and deployed a streamlined class registration system that efficiently processes a list of students' class preferences, taking into account their order of preference and the availability of classes. Additionally, implemented advanced algorithms to further enhance the registration process by factoring in students' draw numbers, ensuring a fair and efficient allocation of classes.</p>
+                        <div id="project-2-visit">
+                        <a target="_blank" href="https://github.com/joshua0983/Registration">
+                            <button class="cta">
+                                <span>Visit</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>                          
+                        </a>
+                        </div>
+                    </div>
+                    <div class="project" id="filmChoice">
+                        <div class="filmChoice-title">
+                            <h2>Film Choice</h2>
+                            <img src="clapperboard.png" id="filmChoice-icon">
+                        </div>
+                        <p id="filmChoice-description">This program has been specifically designed to assist individuals in making informed choices among shows they've previously watched and have a strong desire to sort based on their preferences. It addresses the common dilemma of deciding which show to rewatch or prioritize when you've enjoyed multiple titles over time.</p>
+                        <div id="project-3-visit">
+                            <a target="_blank" href="https://github.com/joshua0983/filmChoice">
+                                <button class="cta">
+                                    <span>Visit</span>
+                                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>                          
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contact">
+                <div class="contact-tile">
+                    <h2>Contact Me</h2>
+                    <div id="contact-components">
+                        <div id="contacts">
+                            <div id="full-email" class="contact">
+                                <button onclick="sendEmail()" id="email-button">
+                                    <img src="mail.png" id="mail-icon">
+                                    <p>joshuajateno@gmail.com</p>
+                                </button>
+                            </div>
+                            <div id="full-linkedIn" class="contact">
+                                <button id="linkedIn-button" onclick="goToLinkedIn()">
+                                        <img src="linkedIn.png" id="linkedIn-icon">
+                                        <p>LinkedIn</p>
+                                </button>
+                            </div>
+                            <div id="full-phone" class="contact">
+                                <button id="phone-button" onclick="call()">
+                                        <img src="phone.png" id="phone-icon">
+                                        <p>+1 (845) 625-6683</p>
+                                </button>
+                            </div>
+                        </div>
+                    <div id="submit-form">
+                        <form class="submit">
+                            <input id="name-holder" placeholder="Name" class="input-style" type="text">
+                            <input id="email-holder" placeholder="Email" class="input-style" type="text">
+                            <input id="subject-holder" placeholder="Subject" class="input-style" type="text">
+                            <textarea id="message-holder" placeholder="Message" class="textarea-style" type="text"></textarea>
+                            <button class="submitBtn" onclick="submitForm()">
+                                Submit
+                                <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                            </button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+
+</html>
