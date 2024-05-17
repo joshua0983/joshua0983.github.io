@@ -250,6 +250,11 @@ body, html {
         width: 30%;
         align-items: center;
     }
+
+    #introduction {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 900px){
@@ -270,9 +275,7 @@ body, html {
     .about-tile{
         height: auto;
     }
-    .about-tile h2 {
-        margin-left: 0
-    }
+    
     #my-description {
         width: 80%;
         height: auto;
@@ -284,6 +287,13 @@ body, html {
         display: flex;
         width: 100%;
         justify-content: space-between;
+    }
+
+    #programming-languages-tools-and-frameworks, #introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
 
@@ -360,6 +370,26 @@ body, html {
 @media (max-width: 719px) {
     #navbar {
         position: static;
+    }
+}
+
+@media (max-width: 419px){
+    #welcome-section img {
+        width: 50%;
+    }
+    #welcome-section {
+        gap: 0px;
+    }
+    .about-tile h2 {
+        margin-left: 0;
+        font-size: 30px;
+    }
+    .about-tile p{
+        font-size: 15px;
+    }
+    #programming-languages-tools-and-frameworks, #introduction {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -588,6 +618,7 @@ body, html {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 
 .about-tile, .language-description, .tools-and-frameworks-description {
     display: flex;
