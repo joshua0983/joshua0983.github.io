@@ -50,6 +50,8 @@ body, html {
 }
 
 #welcome-section {
+    display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     width: auto;
     display: flex;
@@ -308,6 +310,7 @@ body, html {
     }
     #welcome-section h1 {
         margin-left: 0;
+        font-size: 30px;
     }
     #welcome-section h2 {
         margin-left: 0;
@@ -342,6 +345,15 @@ body, html {
     }
     #navbar {
         position: static;
+    }
+
+    .about-tile {
+        height: auto;
+    }
+
+    .about {
+        height: auto;
+    
     }
 }
 
