@@ -82,7 +82,6 @@ body, html {
     width: 25%;
     height: auto;
     border-radius: 30px;
-    margin-left: 20px;
 }
 
 #Projects, #About, #Contact{
@@ -150,247 +149,6 @@ body, html {
 #Projects h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-}
-
-@media (max-width: 1190px){
-    #welcome-section{
-        margin-top: 180px;
-    }
-    #my-description, .language-description, .tools-and-frameworks-description {
-        height: auto;
-    }
-    #navbar {
-        position: fixed;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    #contact-components {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #submit-form {
-        width: 100%;
-    }
-
-    #projects-header {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .submit{
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #contacts {
-        padding-left: 0;
-        width: 30%;
-    }
-
-
-
-}
-
-@media (max-width: 1100px){
-    #navbar {
-        position: fixed;
-        width: 100%;
-        align-items: center;
-    }
-
-    #my-description, .language-description, .tools-and-frameworks-description {
-        height: auto;
-    }
-    #welcome-section h1 {
-        font-size: 40px;
-    }
-    #welcome-text h2 {
-        font-size: 25px;
-    }
-    #contact-components {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #contacts {
-        align-items: center;
-        width: 30%;
-    }
-
-    #submit-form {
-        width: 100%;
-    }
-
-    #projects-header {
-        justify-content: center;
-        width: 100%;
-    }
-
-    #contact-components {
-        flex-direction: column;
-        align-items:  center;
-    }
-
-    .submit{
-        margin-left: 0;
-        width: 100%;
-        align-items: center;
-    }
-
-    #contacts {
-        padding-left: 0;
-        width: 30%;
-        align-items: center;
-    }
-
-    #introduction {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 900px){
-    #navbar {
-        position: fixed;
-        width: 100%;
-        align-items: center;
-    }
-    #navbar button {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .project-tile {
-        height: auto;
-    }
-    .about-tile{
-        height: auto;
-    }
-    
-    #my-description {
-        width: 80%;
-        height: auto;
-    }
-    #my-description, .language-description, .tools-and-frameworks-description {
-        height: auto;
-    }
-    #contact-components {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #programming-languages-tools-and-frameworks, #introduction {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    #contacts {
-        width: 30%;
-    }
-
-    #submit-form {
-        width: 100%;
-    }
-
-    #projects-header {
-        justify-content: center;
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px){
-    #welcome-section{
-        height: 60vh;
-    }
-    .contact-tile{
-        width: 100%
-    }
-    #welcome-section h1 {
-        margin-left: 0;
-        font-size: 30px;
-    }
-    #welcome-section h2 {
-        margin-left: 0;
-    }
-
-    #my-description, .language-description, .tools-and-frameworks-description {
-        height: auto;
-    }
-    #welcome-section h1 {
-        font-size: 35px;
-    }
-    #welcome-text h2 {
-        font-size: 20px;
-    }
-    #contact-components {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #contacts {
-        width: 30%;
-    }
-
-    #submit-form {
-        width: 100%;
-    }
-
-    #projects-header {
-        justify-content: center;
-        width: 100%;
-    }
-    #navbar {
-        position: static;
-    }
-
-    .about-tile {
-        height: auto;
-    }
-
-    .about {
-        height: auto;
-    
-    }
-}
-
-@media (max-width: 719px) {
-    #navbar {
-        position: static;
-    }
-}
-
-@media (max-width: 419px){
-    #welcome-section img {
-        width: 50%;
-    }
-    #welcome-section {
-        gap: 0px;
-    }
-    .about-tile h2 {
-        margin-left: 0;
-        font-size: 30px;
-    }
-    .about-tile p{
-        font-size: 15px;
-    }
-    #programming-languages-tools-and-frameworks, #introduction {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 .button {
@@ -638,6 +396,8 @@ body, html {
 }
 
 #programming-languages, #tools-and-frameworks{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     height: auto;
 }
@@ -654,12 +414,6 @@ body, html {
 }
 
 
-#programming-languages, .tools-and-frameworks{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: auto;
-}
 
 #programming-languages h3, #tools-and-frameworks h3 {
     font-size: 24px;
@@ -876,4 +630,302 @@ body, html {
     padding: 20px;
 }
 
-  
+@media (max-width: 1190px){
+    #welcome-section{
+        margin-top: 180px;
+    }
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
+    }
+    #navbar {
+        position: fixed;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact-components {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #submit-form {
+        width: 100%;
+    }
+
+    #projects-header {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .submit{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #contacts {
+        padding-left: 0;
+        width: 30%;
+    }
+
+
+
+}
+
+@media (max-width: 1100px){
+    #navbar {
+        position: fixed;
+        width: 100%;
+        align-items: center;
+    }
+
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
+    }
+    #welcome-section h1 {
+        font-size: 40px;
+    }
+    #welcome-text h2 {
+        font-size: 25px;
+    }
+    #contact-components {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #contacts {
+        align-items: center;
+        width: 30%;
+    }
+
+    #submit-form {
+        width: 100%;
+    }
+
+    #projects-header {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #contact-components {
+        flex-direction: column;
+        align-items:  center;
+    }
+
+    .submit{
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    #contacts {
+        padding-left: 0;
+        width: 30%;
+        align-items: center;
+    }
+
+    #introduction {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 900px){
+    #navbar {
+        position: fixed;
+        width: 100%;
+        align-items: center;
+    }
+    #navbar button {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project-tile {
+        height: auto;
+    }
+    .about-tile{
+        height: auto;
+    }
+    
+    #my-description {
+        width: 80%;
+        height: auto;
+    }
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
+    }
+    #contact-components {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #programming-languages-tools-and-frameworks, #introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #contacts {
+        width: 30%;
+    }
+
+    #submit-form {
+        width: 100%;
+    }
+
+    #projects-header {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    #welcome-section{
+        height: 60vh;
+    }
+    #welcome-section h1 {
+        margin-left: 0;
+        font-size: 30px;
+    }
+    #welcome-section h2 {
+        margin-left: 0;
+    }
+
+    #my-description, .language-description, .tools-and-frameworks-description {
+        height: auto;
+    }
+    #welcome-section h1 {
+        font-size: 35px;
+    }
+    #welcome-text h2 {
+        font-size: 20px;
+    }
+    #contact-components {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #contacts {
+        width: 30%;
+    }
+
+    #submit-form {
+        width: 100%;
+    }
+
+    #projects-header {
+        justify-content: center;
+        width: 100%;
+    }
+    #navbar {
+        position: static;
+    }
+
+    .about-tile {
+        height: auto;
+    }
+
+    .about {
+        height: auto;
+    
+    }
+
+    #programming-languages, .tools-and-frameworks{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #programming-languages-tools-and-frameworks {
+        width: 100%;
+    }
+
+    #introduction {
+        width: 100%;
+    }
+
+    .language-description, .tools-and-frameworks-description {
+        width: 100%;
+    }
+
+    #my-description, .language-description, .tools-and-frameworks-description {
+        width: 100%;
+    }
+
+    #tools-and-frameworks {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 719px) {
+    #navbar {
+        position: static;
+    }
+}
+
+@media (max-width: 419px){
+    #navbar {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin: 0 1em;
+    }
+    #navbar button {
+        flex-shrink: 0;
+        margin: 0 2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 7px;
+    }
+    #welcome-section img {
+        width: 60%;
+        margin-top: 20px;
+    }
+    #welcome-section {
+        gap: 0px;
+    }
+
+    .button{
+        height: auto;
+        width: 103px;
+    }
+
+
+
+    .about-tile h2 {
+        margin-left: 0;
+        font-size: 30px;
+    }
+    .about-tile p{
+        font-size: 15px;
+    }
+    #programming-languages-tools-and-frameworks, #introduction {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #programming-languages h3, #tools-and-frameworks h3 {
+        font-size: 15px;
+        text-align: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    #welcome-section {
+        padding-top: 0px;
+        margin-top: 50px;
+    }
+    .about{
+        width: auto;
+    }
+}
