@@ -301,26 +301,18 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-.registration-title, .filmChoice-title {
+.project-title {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-left: 90px;
-    margin-bottom: -20px;
+    width: 100%;
+    margin-top: 10px;
 }
 
-#registration-icon, #filmChoice-icon, #restaurant-icon {
+#project-icon {
     width: 30px;
     height: auto;
-    margin-right: 30px;
-}
-
-.lunchbox-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-left: 100px;
-    margin-bottom: -20px;
 }
 
 .contact{
@@ -351,11 +343,11 @@ body, html {
 }
 
 #project-2-visit {
-    padding-top: 42px;
+    padding-top: 45px;
 }
 
 #project-3-visit {
-    padding-top: 58px;
+    padding-top: 65px;
 }
 
 .contact p {
@@ -878,8 +870,24 @@ body, html {
 
 @media (max-width: 540px) {
     #lunchbox, #registration, #filmChoice {
-        width: 200px;
+        width: 260px;
     }
+    #projects-header h1 {
+        font-size: 30px;
+    }
+
+    #Projects h2{
+        font-size: 15px;
+    }
+
+    .project-tile p {
+        font-size: 15px;
+    }
+
+    #project-icon {
+        width: 20px;
+    }
+
 }
 
 @media (max-width: 419px){
@@ -932,13 +940,5 @@ body, html {
     .about{
         width: auto;
     }
-    #projects-header h1 {
-        font-size: 30px;
-    }
-    .project{
-        width: 10em;
-        height: 490px;
-    }
-
 
 }
