@@ -1,3 +1,7 @@
+window.onload = function(){
+    document.querySelector("welcome-section").scrollIntoView();
+}
+
 window.onscroll = function() {
     let navbar = document.querySelector("#navbar");
     let welcomeSection = document.querySelector("#welcome-section").offsetTop - navbar.offsetHeight;
