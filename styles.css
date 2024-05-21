@@ -182,6 +182,7 @@ body, html {
     z-index: 1;
     font-weight: 800;
     letter-spacing: 4px;
+    font-size: 15px;
   }
   
   .type1::after {
@@ -650,6 +651,7 @@ body, html {
         align-items: center;
         justify-content: center;
     }
+
     #contact-components {
         display: flex;
         flex-wrap: wrap;
@@ -927,12 +929,16 @@ body, html {
         padding: 8px 10px;
         width: 95%;
     }
+    .btn-txt {
+        font-size: 13px;
+    }
     #navbar button {
         flex-shrink: 0;
         margin: 0 2em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
         padding: 7px;
+        width: 96px;
     }
 
     .button{
