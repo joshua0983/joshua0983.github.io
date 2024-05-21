@@ -494,7 +494,7 @@ body, html {
     padding-bottom: 20px;
 }
 
-#mail-icon, #linkedIn-icon, #phone-icon {
+#contact-icon {
     width: 30px;
     height: auto;
     margin-right: 30px;
@@ -877,7 +877,7 @@ body, html {
     }
 
     #Projects h2{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .project-tile p {
@@ -887,10 +887,20 @@ body, html {
     #project-icon {
         width: 20px;
     }
+    .submit{
+        align-items: baseline;
+    }
+    .input-style{
+        width: 100%;
+    }
+    .contact-tile h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
 
 }
 
-@media (max-width: 419px){
+@media (max-width: 433px){
     #navbar {
         font-size: 14px;
         padding: 8px 10px;
@@ -939,6 +949,88 @@ body, html {
     }
     .about{
         width: auto;
+    }
+    .contact{
+        width: 250px;
+    }
+    #contact-icon {
+        width: 22px;
+        height: auto;
+        margin-right: 10px;
+        margin-top: 12px;
+    }
+    .contact p {
+        font-size: 15px;
+    }
+    #phone-button p{
+        margin-top: 15px;
+    }
+    #email-button p{
+        margin-top: 12px;
+    }
+    #linkedIn-button p{
+        margin-top: 15px;
+    }
+    .textarea-style {
+        max-width: 140px;
+    }
+}
+@media (max-width: 333px){
+    .about-tile h2 {
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .about-tile p {
+        font-size: 12px;
+    }
+    #programming-languages h3, #tools-and-frameworks h3 {
+        font-size: 10px;
+    }
+    #projects-header h1 {
+        font-size: 20px;
+    }
+    #lunchbox, #registration, #filmChoice {
+        width: 160px;
+    }
+    .project p{
+        font-size: 12px;
+    }
+    #Projects h2 {
+        font-size: 15px;
+    }
+    .contact{
+        width: 200px;
+        margin-left: 0px;
+    }
+    #contact-icon {
+        width: 22px;
+        height: auto;
+        margin-right: 10px;
+        margin-top: 12px;
+    }
+    .contact p {
+        font-size: 12px;
+    }
+    #phone-button p{
+        margin-top: 15px;
+    }
+    #email-button p{
+        margin-top: 14px;
+    }
+    #linkedIn-button p{
+        margin-top: 17px;
+    }
+    .textarea-style {
+        max-width: 120px;
+    }
+    .contact-tile h2 {
+        font-size: 20px;
+    }
+    .textarea-style{
+        max-width: 80px;
+    }
+    .submitBtn{
+        width: 100px;
     }
 
 }
