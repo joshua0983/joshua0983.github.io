@@ -405,7 +405,6 @@ body, html {
 
 #programming-languages, #tools-and-frameworks{
     display: flex;
-    flex-direction: column;
     width: 50%;
     height: auto;
 }
@@ -429,6 +428,10 @@ body, html {
     padding-right: 30px;
     padding-left: 30px;
 
+}
+#programming-languages h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .language-description {
