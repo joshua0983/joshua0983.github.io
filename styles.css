@@ -380,12 +380,17 @@ body, html {
     gap: 20px;
 }
 
+.language-description{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 
 .about-tile, .language-description, .tools-and-frameworks-description {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-    gap: 20px;
+    gap: 30px;
 }
 
 #my-description {
