@@ -482,6 +482,10 @@ body, html {
     color: #333;
 }
 
+#gameExplorer-description {
+    padding-bottom: 63px;
+}
+
 
 #phone-button p{
     margin-top: 12px;
