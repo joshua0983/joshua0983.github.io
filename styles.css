@@ -482,6 +482,43 @@ body, html {
     color: #333;
 }
 
+#gameExplorer {
+    position: relative;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25em;
+    height: 490px;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: white;
+}
+
+#gameExplorer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('gameexplorer.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Blur effect */
+    transition: filter 0.3s ease; /* Smooth transition for the blur */
+    z-index: -1; /* Keeps the image behind the content */
+}
+
+#gameExplorer:hover::before {
+    filter: blur(0); /* Remove blur on hover */
+}
+
+#gameExplorer:hover {
+    transform: scale(1.05);
+}
+
 #gameExplorer-description {
     padding-bottom: 63px;
 }
