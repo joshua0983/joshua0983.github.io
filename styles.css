@@ -513,11 +513,13 @@ body, html {
 
 #gameExplorer:hover::before {
     filter: blur(0); /* Remove blur on hover */
+
 }
 
 #gameExplorer:hover {
+    color: transparent;
     transform: scale(1.05);
-}
+    transition: color 0.5s ease;
 
 #gameExplorer-description {
     padding-bottom: 63px;
