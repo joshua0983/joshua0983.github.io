@@ -520,6 +520,7 @@ body, html {
     color: transparent;
     transform: scale(1.05);
     transition: color 0.5s ease;
+}
 
 #gameExplorer-description {
     padding-bottom: 63px;
